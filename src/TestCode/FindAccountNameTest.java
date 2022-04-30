@@ -8,16 +8,16 @@ import org.junit.Test;
 import Controller.FindAccountName;
 
 public class FindAccountNameTest {
-	FindAccountName Fam;
-	
-	@Before
-	public void setUp() throws Exception {
-		Fam = new FindAccountName();
-	}
+ FindAccountName Fam;
+ 
+ @Before
+ public void setUp() throws Exception {
+  Fam = new FindAccountName();
+ }
 
-	@Test
-	public void testFindAccountName() {
-		assertEquals("Successful", Fam.txtClear());
-	}
-
+ @Test
+ public void testFindAccountName() {
+  assertEquals("Successful", Fam.txtClear());
+ }
+ 
 }

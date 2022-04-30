@@ -9,20 +9,20 @@ import Controller.DeleteCustomer;
 import Controller.FindAccountName;
 
 public class FindAccountTest {
-	FindAccountName S;
-	DeleteCustomer D;
-	
-	@Before
-	public void setUp() throws Exception {
-		S = new FindAccountName();
-		D = new DeleteCustomer();
-	}
+ FindAccountName S;
+ DeleteCustomer D;
+ 
+ @Before
+ public void setUp() throws Exception {
+  S = new FindAccountName();
+  D = new DeleteCustomer();
+ }
+ 
+ @Test
+ public void testdelRec() {
+  D.delRec();
+  assertEquals(null, S.showRec(1));
 
-	@Test
-	public void testdelRec() {
-		D.delRec();
-		assertEquals(null, S.showRec(1));
-
-	}
+ }
 
 }
